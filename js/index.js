@@ -25,11 +25,100 @@ document.getElementById('btnInTheDiv').onclick = function (){
 document.getElementById('btnTinhGiaiThua').onclick = function (){
     //input: number
     var nhapSo = Number(document.getElementById('nhapSo').value);
-    giaTri = 1;
-    giaiThua = 1;
+    //ouput: number
+    var giaiThua = 1;
+    //xử lý
+    var giaTri = 1;
     while (giaTri <= nhapSo){
         giaiThua *= giaTri;
         giaTri ++;
     }
     document.getElementById('ketQuaBai2').innerHTML = giaiThua;
+}
+/*
+    Ví dụ 3: Cho phép người dùng nhập vào 1 số. Tính tổng từ 1 -> n(số người dùng nhập vào)
+*/
+document.getElementById('btnTinhTong').onclick = function (){
+    //input: number
+    var nhapSoN = Number(document.getElementById('nhapSoN').value);
+    //output: number
+    var tong = 0;
+    //xử lý
+    var giaTri = 1;
+    while (giaTri <= nhapSoN){
+        tong += giaTri;
+        giaTri ++;
+    }
+    document.getElementById('ketQuaBai3').innerHTML = tong;
+}
+/*
+    Ví dụ 4: Cho phép người dùng nhập vào 1 số. Tính tổng số chẵn từ 1 -> n(số người dùng nhập vào)
+*/
+document.getElementById('btnTinhTongSoChan').onclick = function (){
+    //input: number
+    var nhapSo_4 = Number(document.getElementById('nhapSo_4').value);
+    //output: number
+    var tong = 0;
+    //xử lý
+    var soHang = 2;
+    while (soHang <= nhapSo_4){
+        // if (soHang % 2 == 0){
+        //     Tong += soHang;
+        // }
+        // soHang ++;
+        tong += soHang;
+        soHang += 2;
+    }
+    document.getElementById('ketQuaBai4').innerHTML = tong;
+}
+/*
+    Ví dụ 5: Cho phép người dùng nhập vào 1 số. Cho biết số đó có phải là số nguyên tố hay không
+*/
+// document.getElementById('btnKiemTraSoNguyenTo').onclick = function (){
+//     //input: number
+//     var nhapSo_5 = Number(document.getElementById('nhapSo_5').value);
+//     //output: number
+//     var ketQua = '';
+//     //xử lý
+//     var soHang = 0;
+//     var dem = 0;
+//     while (soHang <= nhapSo_5){
+//         if (nhapSo_5 % soHang == 0){
+//             //Nếu chia hết
+//             dem ++;
+//         }
+//         soHang ++;
+//     }
+//     if (dem ==2){
+//         ketQua = nhapSo_5 + ' là số nguyên tố'
+//     }
+//     else {
+//         ketQua = nhapSo_5 + ' không phải là số nguyên tố'
+//     }
+//     document.getElementById('ketQuaBai5').innerHTML = ketQua;
+    
+// }
+//Cách 2
+document.getElementById('btnKiemTraSoNguyenTo').onclick = function (){
+    //input: number
+    var nhapSo_5 = Number(document.getElementById('nhapSo_5').value);
+    //output: number
+    var ketQua = '';
+    //xử lý
+    var checkNT = true;
+    var soHang =2;
+    while (soHang <= Math.sqrt(nhapSo_5)){
+        if (nhapSo_5 % soHang == 0){
+            checkNT = false;
+        }
+        soHang ++;
+    }
+    if (checkNT){
+        ketQua = nhapSo_5 + ' là số nguyên tố'
+    }
+    else {
+        ketQua = nhapSo_5 + ' không phải là số nguyên tố'
+    }
+    document.getElementById('ketQuaBai5').innerHTML = ketQua;
+    
 }

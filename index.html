@@ -1,15 +1,18 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Title</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
     <div class="container" style="margin-bottom: 500px;">
         <h3>Ví dụ 1: Cho phép người dùng nhập vào 1 số, In ra số thẻ div hello cybersoft tương tự</h3>
         <div class="form-group">
@@ -27,14 +30,60 @@
             <button class="btn btn-success" id="btnTinhGiaiThua">Tính giai thừa</button>
         </div>
         <div class="alert alert-danger" id="ketQuaBai2"></div>
+        <hr />
+        <h3>Ví dụ 3: Cho phép người dùng nhập vào 1 số. Tính tổng từ 1 -> n(số người dùng nhập vào)</h3>
+        <div class="alert alert-danger">
+            Ví dụ: Người dùng nhập vào số 7
+            <br />
+            Kết quả = 1 + 2 + 3 + 4 + 5 + 6 + 7
+        </div>
+        <div class="form-group">
+            <p>Nhập vào 1 số</p>
+            <input class="form-control w-25 mb-2" id="nhapSoN">
+            <button class="btn btn-success" id="btnTinhTong">Tính tổng</button>
+        </div>
+        <div class="alert alert-danger" id="ketQuaBai3"></div>
+        <hr />
+        <h3>Ví dụ 4: Cho phép người dùng nhập vào 1 số. Tính tổng số chẵn từ 1 -> n(số người dùng nhập vào)</h3>
+        <div class="alert alert-danger">
+            Ví dụ: Người dùng nhập vào số 10
+            <br />
+            Kết quả = 2 + 4 + 6 + 8 + 10
+        </div>
+        <div class="form-group">
+            <p>Nhập vào 1 số</p>
+            <input class="form-control w-25 mb-2" id="nhapSo_4">
+            <button class="btn btn-success" id="btnTinhTongSoChan">Tính tổng</button>
+        </div>
+        <div class="alert alert-danger" id="ketQuaBai4"></div>
+        <hr />
+        <h3>Ví dụ 5: Cho phép người dùng nhập vào 1 số. Cho biết số đó có phải là số nguyên tố hay không</h3>
+        <div class="alert alert-warning">
+            Ví dụ: Người dùng nhập vào số 5
+            <br />
+            Kết quả: 5 là số nguyên tố
+        </div>
+        <div class="form-group">
+            <p>Nhập vào 1 số</p>
+            <input class="form-control w-25 mb-2" id="nhapSo_5">
+            <button class="btn btn-warning" id="btnKiemTraSoNguyenTo">Kiểm tra số nguyên tố</button>
+        </div>
+        <div class="alert alert-warning" id="ketQuaBai5"></div>
     </div>
-      
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script src="./js/common/method.js"></script>
     <script src="./js/index.js"></script>
-  </body>
+</body>
+
 </html>
