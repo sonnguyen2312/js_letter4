@@ -10,6 +10,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -69,6 +70,54 @@
             <button class="btn btn-warning" id="btnKiemTraSoNguyenTo">Kiểm tra số nguyên tố</button>
         </div>
         <div class="alert alert-warning" id="ketQuaBai5"></div>
+        <hr />
+        <h3>Ví dụ 6: Cho phép người dùng nhập vào 1 số. In ra số ngôi sao tương ứng</h3>
+        <div class="alert alert-success">
+            Ví dụ: Người dùng nhập vào số 5
+            <br />
+            Kết quả: * * * * *
+        </div>
+        <div class="form-group">
+            <p>Nhập vào 1 số</p>
+            <input class="form-control w-25 mb-2" id="nhapSo_6">
+            <button class="btn btn-info" id="btnInSao">In ngôi sao</button>
+        </div>
+        <div class="alert alert-info" id="ketQuaBai6"></div>
+        <h3>Ví dụ 7: Cho phép người dùng nhập vào số hàng và số cột. In ra số ngôi sao tương ứng</h3>
+        <div class="alert alert-warning">
+            Ví dụ: Người dùng nhập vào 3 hàng 5 cột
+            Kết quả:<br />
+            * * * * * <br />
+            * * * * * <br />
+            * * * * *
+        </div>
+        <div class="form-group">
+            <div class="row">
+                <div class="col-6">
+                    <p>Nhập vào số hàng</p>
+                    <input class="form-control w-25 mb-2" id="soHang">
+                </div>
+                <div class="col-6">
+                    <p>Nhập vào số cột</p>
+                    <input class="form-control w-25 mb-2" id="soCot">
+                </div>
+            </div>
+            <button class="btn btn-warning" id="btnInSao_7">In ngôi sao</button>
+        </div>
+        <div class="alert alert-warning" id="ketQuaBai7"></div>
+        <hr />
+        <h3>Ví dụ 8: Cho phép người dùng nhập vào 1 số. In tất cả số nguyên tố nhỏ hơn hoặc bằng số người dùng nhập</h3>
+        <div class="alert alert-success">
+            Ví dụ: Người dùng nhập vào số 5
+            <br />
+            Kết quả: 2 3 5
+        </div>
+        <div class="form-group">
+            <p>Nhập vào 1 số</p>
+            <input class="form-control w-25 mb-2" id="nhapSo_8">
+            <button class="btn btn-success" id="btnInSoNguyenTo">In số nguyên tố</button>
+        </div>
+        <div class="alert alert-success" id="ketQuaBai8"></div>
     </div>
 
     <!-- Optional JavaScript -->
